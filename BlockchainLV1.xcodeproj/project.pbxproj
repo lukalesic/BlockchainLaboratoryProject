@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF0EC9B12BA30FB300E6C35A /* BlockchainLV1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */; };
+		DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9B22BA30FB300E6C35A /* ContentView.swift */; };
+		DF0EC9B52BA30FB400E6C35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */; };
+		DF0EC9B92BA30FB400E6C35A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */; };
+		DF0EC9C32BA30FB500E6C35A /* BlockchainLV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */; };
+		DF0EC9CD2BA30FB500E6C35A /* BlockchainLV1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */; };
+		DF0EC9CF2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF0EC9BF2BA30FB500E6C35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0EC9A52BA30FB300E6C35A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0EC9AC2BA30FB300E6C35A;
+			remoteInfo = BlockchainLV1;
+		};
+		DF0EC9C92BA30FB500E6C35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0EC9A52BA30FB300E6C35A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0EC9AC2BA30FB300E6C35A;
+			remoteInfo = BlockchainLV1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF0EC9AD2BA30FB300E6C35A /* BlockchainLV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockchainLV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1App.swift; sourceTree = "<group>"; };
+		DF0EC9B22BA30FB300E6C35A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF0EC9B62BA30FB400E6C35A /* BlockchainLV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockchainLV1.entitlements; sourceTree = "<group>"; };
+		DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF0EC9BE2BA30FB500E6C35A /* BlockchainLV1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1Tests.swift; sourceTree = "<group>"; };
+		DF0EC9C82BA30FB500E6C35A /* BlockchainLV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITests.swift; sourceTree = "<group>"; };
+		DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0EC9AA2BA30FB300E6C35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9BB2BA30FB500E6C35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9C52BA30FB500E6C35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF0EC9A42BA30FB300E6C35A = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */,
+				DF0EC9C12BA30FB500E6C35A /* BlockchainLV1Tests */,
+				DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */,
+				DF0EC9AE2BA30FB300E6C35A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0EC9AE2BA30FB300E6C35A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9AD2BA30FB300E6C35A /* BlockchainLV1.app */,
+				DF0EC9BE2BA30FB500E6C35A /* BlockchainLV1Tests.xctest */,
+				DF0EC9C82BA30FB500E6C35A /* BlockchainLV1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */,
+				DF0EC9B22BA30FB300E6C35A /* ContentView.swift */,
+				DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */,
+				DF0EC9B62BA30FB400E6C35A /* BlockchainLV1.entitlements */,
+				DF0EC9B72BA30FB400E6C35A /* Preview Content */,
+			);
+			path = BlockchainLV1;
+			sourceTree = "<group>";
+		};
+		DF0EC9B72BA30FB400E6C35A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF0EC9C12BA30FB500E6C35A /* BlockchainLV1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */,
+			);
+			path = BlockchainLV1Tests;
+			sourceTree = "<group>";
+		};
+		DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */,
+				DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */,
+			);
+			path = BlockchainLV1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF0EC9AC2BA30FB300E6C35A /* BlockchainLV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0EC9D22BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1" */;
+			buildPhases = (
+				DF0EC9A92BA30FB300E6C35A /* Sources */,
+				DF0EC9AA2BA30FB300E6C35A /* Frameworks */,
+				DF0EC9AB2BA30FB300E6C35A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockchainLV1;
+			productName = BlockchainLV1;
+			productReference = DF0EC9AD2BA30FB300E6C35A /* BlockchainLV1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF0EC9BD2BA30FB500E6C35A /* BlockchainLV1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0EC9D52BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1Tests" */;
+			buildPhases = (
+				DF0EC9BA2BA30FB500E6C35A /* Sources */,
+				DF0EC9BB2BA30FB500E6C35A /* Frameworks */,
+				DF0EC9BC2BA30FB500E6C35A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF0EC9C02BA30FB500E6C35A /* PBXTargetDependency */,
+			);
+			name = BlockchainLV1Tests;
+			productName = BlockchainLV1Tests;
+			productReference = DF0EC9BE2BA30FB500E6C35A /* BlockchainLV1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF0EC9C72BA30FB500E6C35A /* BlockchainLV1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0EC9D82BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1UITests" */;
+			buildPhases = (
+				DF0EC9C42BA30FB500E6C35A /* Sources */,
+				DF0EC9C52BA30FB500E6C35A /* Frameworks */,
+				DF0EC9C62BA30FB500E6C35A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF0EC9CA2BA30FB500E6C35A /* PBXTargetDependency */,
+			);
+			name = BlockchainLV1UITests;
+			productName = BlockchainLV1UITests;
+			productReference = DF0EC9C82BA30FB500E6C35A /* BlockchainLV1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF0EC9A52BA30FB300E6C35A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					DF0EC9AC2BA30FB300E6C35A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					DF0EC9BD2BA30FB500E6C35A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DF0EC9AC2BA30FB300E6C35A;
+					};
+					DF0EC9C72BA30FB500E6C35A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DF0EC9AC2BA30FB300E6C35A;
+					};
+				};
+			};
+			buildConfigurationList = DF0EC9A82BA30FB300E6C35A /* Build configuration list for PBXProject "BlockchainLV1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF0EC9A42BA30FB300E6C35A;
+			productRefGroup = DF0EC9AE2BA30FB300E6C35A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0EC9AC2BA30FB300E6C35A /* BlockchainLV1 */,
+				DF0EC9BD2BA30FB500E6C35A /* BlockchainLV1Tests */,
+				DF0EC9C72BA30FB500E6C35A /* BlockchainLV1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0EC9AB2BA30FB300E6C35A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0EC9B92BA30FB400E6C35A /* Preview Assets.xcassets in Resources */,
+				DF0EC9B52BA30FB400E6C35A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9BC2BA30FB500E6C35A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9C62BA30FB500E6C35A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0EC9A92BA30FB300E6C35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */,
+				DF0EC9B12BA30FB300E6C35A /* BlockchainLV1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9BA2BA30FB500E6C35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0EC9C32BA30FB500E6C35A /* BlockchainLV1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0EC9C42BA30FB500E6C35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0EC9CF2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift in Sources */,
+				DF0EC9CD2BA30FB500E6C35A /* BlockchainLV1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF0EC9C02BA30FB500E6C35A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0EC9AC2BA30FB300E6C35A /* BlockchainLV1 */;
+			targetProxy = DF0EC9BF2BA30FB500E6C35A /* PBXContainerItemProxy */;
+		};
+		DF0EC9CA2BA30FB500E6C35A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0EC9AC2BA30FB300E6C35A /* BlockchainLV1 */;
+			targetProxy = DF0EC9C92BA30FB500E6C35A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF0EC9D02BA30FB500E6C35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF0EC9D12BA30FB500E6C35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DF0EC9D32BA30FB500E6C35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlockchainLV1/BlockchainLV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockchainLV1/Preview Content\"";
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF0EC9D42BA30FB500E6C35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlockchainLV1/BlockchainLV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockchainLV1/Preview Content\"";
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF0EC9D62BA30FB500E6C35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockchainLV1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockchainLV1";
+			};
+			name = Debug;
+		};
+		DF0EC9D72BA30FB500E6C35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockchainLV1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockchainLV1";
+			};
+			name = Release;
+		};
+		DF0EC9D92BA30FB500E6C35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockchainLV1;
+			};
+			name = Debug;
+		};
+		DF0EC9DA2BA30FB500E6C35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.block.luka.BlockchainLV1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockchainLV1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0EC9A82BA30FB300E6C35A /* Build configuration list for PBXProject "BlockchainLV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0EC9D02BA30FB500E6C35A /* Debug */,
+				DF0EC9D12BA30FB500E6C35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0EC9D22BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0EC9D32BA30FB500E6C35A /* Debug */,
+				DF0EC9D42BA30FB500E6C35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0EC9D52BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0EC9D62BA30FB500E6C35A /* Debug */,
+				DF0EC9D72BA30FB500E6C35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0EC9D82BA30FB500E6C35A /* Build configuration list for PBXNativeTarget "BlockchainLV1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0EC9D92BA30FB500E6C35A /* Debug */,
+				DF0EC9DA2BA30FB500E6C35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF0EC9A52BA30FB300E6C35A /* Project object */;
+}

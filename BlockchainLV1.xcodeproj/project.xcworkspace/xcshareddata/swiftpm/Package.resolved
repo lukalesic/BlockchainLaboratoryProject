@@ -1,0 +1,60 @@
+{
+  "originHash" : "cba5847e2176b7d4870cc1eb6e739d3060d19eb12b621c2d13f43ef817c77c88",
+  "pins" : [
+    {
+      "identity" : "bluersa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kitura/BlueRSA.git",
+      "state" : {
+        "revision" : "440f78db26d8bb073f29590f1c7bd31004da09ae",
+        "version" : "1.0.201"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "7892a123f7e8d0fe62f9f03728b17bbd4f94df5c",
+        "version" : "1.8.1"
+      }
+    },
+    {
+      "identity" : "swift-base16",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alja7dali/swift-base16.git",
+      "state" : {
+        "revision" : "4e452d40d08457bce120a621231e0b9e6815a9f8",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-base58",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alja7dali/swift-base58.git",
+      "state" : {
+        "revision" : "1eecf184e48d2702036663c7d238aab201bb9924",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-bits",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alja7dali/swift-bits.git",
+      "state" : {
+        "revision" : "83668ec40d877d9e0012ba93359191cfc4bf04af",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-sha256",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alja7dali/swift-sha256.git",
+      "state" : {
+        "revision" : "758852c8a92cacb8d125e152a2134b0cf9535e8e",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

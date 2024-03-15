@@ -11,9 +11,12 @@
 		DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9B22BA30FB300E6C35A /* ContentView.swift */; };
 		DF0EC9B52BA30FB400E6C35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */; };
 		DF0EC9B92BA30FB400E6C35A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */; };
-		DF0EC9C32BA30FB500E6C35A /* BlockchainLV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */; };
 		DF0EC9CD2BA30FB500E6C35A /* BlockchainLV1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */; };
 		DF0EC9CF2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */; };
+		DF0EC9DD2BA3100100E6C35A /* Zadaci.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */; };
+		DF25E5082BA310BF00FCB498 /* Base58 in Frameworks */ = {isa = PBXBuildFile; productRef = DF25E5072BA310BF00FCB498 /* Base58 */; };
+		DF25E50B2BA3155600FCB498 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF25E50A2BA3155600FCB498 /* CryptoSwift */; };
+		DFD7E0A02BA33730008BFD35 /* CryptorRSA in Frameworks */ = {isa = PBXBuildFile; productRef = DFD7E09F2BA33730008BFD35 /* CryptorRSA */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DF25E5112BA335C200FCB498 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DF0EC9AD2BA30FB300E6C35A /* BlockchainLV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockchainLV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1App.swift; sourceTree = "<group>"; };
@@ -41,10 +57,11 @@
 		DF0EC9B62BA30FB400E6C35A /* BlockchainLV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockchainLV1.entitlements; sourceTree = "<group>"; };
 		DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF0EC9BE2BA30FB500E6C35A /* BlockchainLV1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1Tests.swift; sourceTree = "<group>"; };
 		DF0EC9C82BA30FB500E6C35A /* BlockchainLV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITests.swift; sourceTree = "<group>"; };
 		DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zadaci.swift; sourceTree = "<group>"; };
+		DF25E50D2BA335B800FCB498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF25E5082BA310BF00FCB498 /* Base58 in Frameworks */,
+				DF25E50B2BA3155600FCB498 /* CryptoSwift in Frameworks */,
+				DFD7E0A02BA33730008BFD35 /* CryptorRSA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */,
-				DF0EC9C12BA30FB500E6C35A /* BlockchainLV1Tests */,
 				DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */,
 				DF0EC9AE2BA30FB300E6C35A /* Products */,
+				DF25E5062BA310BF00FCB498 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +115,10 @@
 		DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */ = {
 			isa = PBXGroup;
 			children = (
+				DF25E50D2BA335B800FCB498 /* Info.plist */,
 				DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */,
 				DF0EC9B22BA30FB300E6C35A /* ContentView.swift */,
+				DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */,
 				DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */,
 				DF0EC9B62BA30FB400E6C35A /* BlockchainLV1.entitlements */,
 				DF0EC9B72BA30FB400E6C35A /* Preview Content */,
@@ -112,14 +134,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DF0EC9C12BA30FB500E6C35A /* BlockchainLV1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DF0EC9C22BA30FB500E6C35A /* BlockchainLV1Tests.swift */,
-			);
-			path = BlockchainLV1Tests;
-			sourceTree = "<group>";
-		};
 		DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,13 @@
 				DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */,
 			);
 			path = BlockchainLV1UITests;
+			sourceTree = "<group>";
+		};
+		DF25E5062BA310BF00FCB498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,12 +160,18 @@
 				DF0EC9A92BA30FB300E6C35A /* Sources */,
 				DF0EC9AA2BA30FB300E6C35A /* Frameworks */,
 				DF0EC9AB2BA30FB300E6C35A /* Resources */,
+				DF25E5112BA335C200FCB498 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BlockchainLV1;
+			packageProductDependencies = (
+				DF25E5072BA310BF00FCB498 /* Base58 */,
+				DF25E50A2BA3155600FCB498 /* CryptoSwift */,
+				DFD7E09F2BA33730008BFD35 /* CryptorRSA */,
+			);
 			productName = BlockchainLV1;
 			productReference = DF0EC9AD2BA30FB300E6C35A /* BlockchainLV1.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +244,11 @@
 				Base,
 			);
 			mainGroup = DF0EC9A42BA30FB300E6C35A;
+			packageReferences = (
+				DF0EC9DB2BA30FE500E6C35A /* XCRemoteSwiftPackageReference "swift-base58" */,
+				DF25E5092BA3155600FCB498 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				DFD7E09E2BA33730008BFD35 /* XCRemoteSwiftPackageReference "BlueRSA" */,
+			);
 			productRefGroup = DF0EC9AE2BA30FB300E6C35A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +293,7 @@
 			files = (
 				DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */,
 				DF0EC9B12BA30FB300E6C35A /* BlockchainLV1App.swift in Sources */,
+				DF0EC9DD2BA3100100E6C35A /* Zadaci.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF0EC9C32BA30FB500E6C35A /* BlockchainLV1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +456,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockchainLV1/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +495,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockchainLV1/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -617,6 +651,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF0EC9DB2BA30FE500E6C35A /* XCRemoteSwiftPackageReference "swift-base58" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alja7dali/swift-base58.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DF25E5092BA3155600FCB498 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+		DFD7E09E2BA33730008BFD35 /* XCRemoteSwiftPackageReference "BlueRSA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/BlueRSA.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.201;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF25E5072BA310BF00FCB498 /* Base58 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF0EC9DB2BA30FE500E6C35A /* XCRemoteSwiftPackageReference "swift-base58" */;
+			productName = Base58;
+		};
+		DF25E50A2BA3155600FCB498 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF25E5092BA3155600FCB498 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		DFD7E09F2BA33730008BFD35 /* CryptorRSA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFD7E09E2BA33730008BFD35 /* XCRemoteSwiftPackageReference "BlueRSA" */;
+			productName = CryptorRSA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF0EC9A52BA30FB300E6C35A /* Project object */;
 }

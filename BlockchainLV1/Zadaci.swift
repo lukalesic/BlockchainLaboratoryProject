@@ -7,29 +7,112 @@
 
 import Foundation
 import Base58
+import CryptorRSA
+import CryptoKit
 
-class prviZadatak {
+class BlockchainManager {
+    //MARK: Lab #1
     
-    func encodetoBase58(text: String) {
+    static let message = "FERIT"
+    
+    //MARK: task 1
+    
+    func encodeBase58(text: String) {
         //encoding string to base58
-        let bytes = text.makeBytes()
-        let encodedBytes = Base58.encode(bytes)
-       // let encodedString = try? String(encodedBytes)
-        let encodedString = String(bytes: encodedBytes, encoding: .utf8)
-        print("encoded \(bytes) to base 58 : \(encodedString)")
+        let bytesArray = text.makeBytes()
+        let encodedBytesArray = Base58.encode(bytesArray)
+        let resultString = String(bytes: encodedBytesArray, encoding: .utf8)
+        print("encoded \(text) to bytes array \(bytesArray) to Base58 : \(resultString)")
         
         //decoding back to string
-        decodeFromBase58(hash: encodedString ?? "")
+        decodeBase58(hash: resultString ?? "")
     }
     
-    func decodeFromBase58(hash: String) {
-        let bytes = hash.makeBytes()
-        if let decodedBytes = try? Base58.decode(bytes),
-              let decodedString = String(bytes: decodedBytes, encoding: .utf8) {
-               print("Decoded: \(decodedString)")
-           } else {
-               fatalError()
-           }
-       }
+   private func decodeBase58(hash: String) {
+        let bytesArray = hash.makeBytes()
+       
+        if let decodedBytesArray = try? Base58.decode(bytesArray),
+           let resultString = String(bytes: decodedBytesArray, encoding: .utf8) {
+            print("Decoded: \(resultString) \n")
+        } else {   
+            fatalError()
+        }
+    }
     
+    //MARK: task 2
+    
+    func encodeToShA(text: String) {
+        let data = text.data(using: .utf8)!
+        let digest = SHA256.hash(data: data)
+        
+        let hashString = digest
+            .compactMap { String(format: "%02x", $0) }
+            .joined()
+        print("hashString: \(hashString) \n")
+    }
+    
+    //MARK: Task 3
+
+    func generateKeys() {
+        var publicKey: SecKey?
+        var privateKey: SecKey?
+
+        let parameters: [String: Any] = [
+            kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
+            kSecAttrKeySizeInBits as String: 2048
+        ]
+
+        SecKeyGeneratePair(parameters as CFDictionary, &publicKey, &privateKey)
+        
+        if let publicKeyData = publicKey, let privateKeyData = privateKey {
+            printPublicKey(publicKeyData)
+            printPrivateKey(privateKeyData)
+            
+            if let encryptedData = encryptMessageWithPublicKey(message: Self.message, publicKey: publicKeyData) {
+                print("Encoded message: \(encryptedData.base64EncodedString())")
+                
+                if let decryptedMessage = decryptMessageWithPrivateKey(encryptedData: encryptedData, privateKey: privateKeyData) {
+                    print("Decrypted message: \(decryptedMessage)")
+                } else {
+                    print("Decryption failed.")
+                }
+            } else {
+                print("Encryption failed.")
+            }
+        } else {
+            print("Key generation failed.")
+        }
+    }
+    
+    func printPublicKey(_ publicKey: SecKey) {
+        print("Public Key: \(publicKey)")
+        print("Public Key hash Value: \(publicKey.hashValue)")
+    }
+    
+    func printPrivateKey(_ privateKey: SecKey) {
+        print("Private Key: \(privateKey)")
+        print("Private Key hash Value: \(privateKey.hashValue)")
+    }
+    
+    func encryptMessageWithPublicKey(message: String, publicKey: SecKey) -> Data? {
+        guard let messageData = message.data(using: .utf8) else {
+            return nil
+        }
+        
+        var error: Unmanaged<CFError>?
+        guard let encryptedData = SecKeyCreateEncryptedData(publicKey, .rsaEncryptionOAEPSHA256, messageData as CFData, &error) else {
+            print("Encryption failed: \(error.debugDescription)")
+            return nil
+        }
+        return encryptedData as Data
+    }
+    
+    func decryptMessageWithPrivateKey(encryptedData: Data, privateKey: SecKey) -> String? {
+        var error: Unmanaged<CFError>?
+        guard let decryptedData = SecKeyCreateDecryptedData(privateKey, .rsaEncryptionOAEPSHA256, encryptedData as CFData, &error) else {
+            print("Decryption failed: \(error.debugDescription)")
+            return nil
+        }
+        return String(data: decryptedData as Data, encoding: .utf8)
+    }
 }

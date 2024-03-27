@@ -11,12 +11,17 @@
 		DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9B22BA30FB300E6C35A /* ContentView.swift */; };
 		DF0EC9B52BA30FB400E6C35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */; };
 		DF0EC9B92BA30FB400E6C35A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */; };
-		DF0EC9CD2BA30FB500E6C35A /* BlockchainLV1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */; };
-		DF0EC9CF2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */; };
-		DF0EC9DD2BA3100100E6C35A /* Zadaci.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */; };
+		DF0EC9DD2BA3100100E6C35A /* BlockchainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0EC9DC2BA3100100E6C35A /* BlockchainManager.swift */; };
 		DF25E5082BA310BF00FCB498 /* Base58 in Frameworks */ = {isa = PBXBuildFile; productRef = DF25E5072BA310BF00FCB498 /* Base58 */; };
 		DF25E50B2BA3155600FCB498 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF25E50A2BA3155600FCB498 /* CryptoSwift */; };
 		DFD7E0A02BA33730008BFD35 /* CryptorRSA in Frameworks */ = {isa = PBXBuildFile; productRef = DFD7E09F2BA33730008BFD35 /* CryptorRSA */; };
+		DFD7E0A32BA8629F008BFD35 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0A22BA8629F008BFD35 /* Transaction.swift */; };
+		DFD7E0A52BA862A6008BFD35 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0A42BA862A6008BFD35 /* Wallet.swift */; };
+		DFD7E0A72BA862AA008BFD35 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0A62BA862A9008BFD35 /* Block.swift */; };
+		DFD7E0A92BA862B0008BFD35 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0A82BA862B0008BFD35 /* Blockchain.swift */; };
+		DFD7E0AB2BA86607008BFD35 /* BlockchainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0AA2BA86607008BFD35 /* BlockchainFactory.swift */; };
+		DFD7E0AE2BA86AA2008BFD35 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0AD2BA86AA2008BFD35 /* String+Extension.swift */; };
+		DFD7E0B12BA86E49008BFD35 /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7E0B02BA86E49008BFD35 /* TransactionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +63,15 @@
 		DF0EC9B82BA30FB400E6C35A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF0EC9BE2BA30FB500E6C35A /* BlockchainLV1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0EC9C82BA30FB500E6C35A /* BlockchainLV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockchainLV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITests.swift; sourceTree = "<group>"; };
-		DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainLV1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zadaci.swift; sourceTree = "<group>"; };
+		DF0EC9DC2BA3100100E6C35A /* BlockchainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainManager.swift; sourceTree = "<group>"; };
 		DF25E50D2BA335B800FCB498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFD7E0A22BA8629F008BFD35 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		DFD7E0A42BA862A6008BFD35 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		DFD7E0A62BA862A9008BFD35 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		DFD7E0A82BA862B0008BFD35 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		DFD7E0AA2BA86607008BFD35 /* BlockchainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFactory.swift; sourceTree = "<group>"; };
+		DFD7E0AD2BA86AA2008BFD35 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DFD7E0B02BA86E49008BFD35 /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */,
-				DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */,
 				DF0EC9AE2BA30FB300E6C35A /* Products */,
 				DF25E5062BA310BF00FCB498 /* Frameworks */,
 			);
@@ -115,10 +124,14 @@
 		DF0EC9AF2BA30FB300E6C35A /* BlockchainLV1 */ = {
 			isa = PBXGroup;
 			children = (
+				DFD7E0AF2BA86E3F008BFD35 /* TransactionManager */,
+				DFD7E0AC2BA86A9B008BFD35 /* Extensions */,
+				DFD7E0A12BA8628F008BFD35 /* Cryptocurrency */,
 				DF25E50D2BA335B800FCB498 /* Info.plist */,
 				DF0EC9B02BA30FB300E6C35A /* BlockchainLV1App.swift */,
 				DF0EC9B22BA30FB300E6C35A /* ContentView.swift */,
-				DF0EC9DC2BA3100100E6C35A /* Zadaci.swift */,
+				DF0EC9DC2BA3100100E6C35A /* BlockchainManager.swift */,
+				DFD7E0AA2BA86607008BFD35 /* BlockchainFactory.swift */,
 				DF0EC9B42BA30FB400E6C35A /* Assets.xcassets */,
 				DF0EC9B62BA30FB400E6C35A /* BlockchainLV1.entitlements */,
 				DF0EC9B72BA30FB400E6C35A /* Preview Content */,
@@ -134,20 +147,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DF0EC9CB2BA30FB500E6C35A /* BlockchainLV1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				DF0EC9CC2BA30FB500E6C35A /* BlockchainLV1UITests.swift */,
-				DF0EC9CE2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift */,
-			);
-			path = BlockchainLV1UITests;
-			sourceTree = "<group>";
-		};
 		DF25E5062BA310BF00FCB498 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD7E0A12BA8628F008BFD35 /* Cryptocurrency */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7E0A22BA8629F008BFD35 /* Transaction.swift */,
+				DFD7E0A42BA862A6008BFD35 /* Wallet.swift */,
+				DFD7E0A62BA862A9008BFD35 /* Block.swift */,
+				DFD7E0A82BA862B0008BFD35 /* Blockchain.swift */,
+			);
+			path = Cryptocurrency;
+			sourceTree = "<group>";
+		};
+		DFD7E0AC2BA86A9B008BFD35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7E0AD2BA86AA2008BFD35 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFD7E0AF2BA86E3F008BFD35 /* TransactionManager */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7E0B02BA86E49008BFD35 /* TransactionManager.swift */,
+			);
+			path = TransactionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD7E0AB2BA86607008BFD35 /* BlockchainFactory.swift in Sources */,
+				DFD7E0AE2BA86AA2008BFD35 /* String+Extension.swift in Sources */,
+				DFD7E0A52BA862A6008BFD35 /* Wallet.swift in Sources */,
 				DF0EC9B32BA30FB300E6C35A /* ContentView.swift in Sources */,
+				DFD7E0B12BA86E49008BFD35 /* TransactionManager.swift in Sources */,
 				DF0EC9B12BA30FB300E6C35A /* BlockchainLV1App.swift in Sources */,
-				DF0EC9DD2BA3100100E6C35A /* Zadaci.swift in Sources */,
+				DFD7E0A72BA862AA008BFD35 /* Block.swift in Sources */,
+				DFD7E0A32BA8629F008BFD35 /* Transaction.swift in Sources */,
+				DF0EC9DD2BA3100100E6C35A /* BlockchainManager.swift in Sources */,
+				DFD7E0A92BA862B0008BFD35 /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF0EC9CF2BA30FB500E6C35A /* BlockchainLV1UITestsLaunchTests.swift in Sources */,
-				DF0EC9CD2BA30FB500E6C35A /* BlockchainLV1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

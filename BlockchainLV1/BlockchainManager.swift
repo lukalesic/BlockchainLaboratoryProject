@@ -41,19 +41,19 @@ class BlockchainManager {
     
     //MARK: task 2
     
-    func encodeToShA(text: String) {
+    func encodeToShA(text: String) -> String {
         let data = text.data(using: .utf8)!
         let digest = SHA256.hash(data: data)
         
         let hashString = digest
             .compactMap { String(format: "%02x", $0) }
             .joined()
-        print("hashString: \(hashString) \n")
+        return hashString
     }
     
     //MARK: Task 3
 
-    func generateKeys() {
+    func generateKeys() -> (SecKey?, SecKey?) {
         var publicKey: SecKey?
         var privateKey: SecKey?
 
@@ -65,14 +65,14 @@ class BlockchainManager {
         SecKeyGeneratePair(parameters as CFDictionary, &publicKey, &privateKey)
         
         if let publicKeyData = publicKey, let privateKeyData = privateKey {
-            printPublicKey(publicKeyData)
-            printPrivateKey(privateKeyData)
+//            printPublicKey(publicKeyData)
+//            printPrivateKey(privateKeyData)
             
-            if let encryptedData = encryptMessageWithPublicKey(message: Self.message, publicKey: publicKeyData) {
-                print("Encoded message: \(encryptedData.base64EncodedString())")
+            if let encryptedData = encryptMessageWithPublicKey(message: "".generateRandomString(length: 10), publicKey: publicKeyData) {
+//                print("Encoded message: \(encryptedData.base64EncodedString())")
                 
                 if let decryptedMessage = decryptMessageWithPrivateKey(encryptedData: encryptedData, privateKey: privateKeyData) {
-                    print("Decrypted message: \(decryptedMessage)")
+//                    print("Decrypted message: \(decryptedMessage)")
                 } else {
                     print("Decryption failed.")
                 }
@@ -82,6 +82,7 @@ class BlockchainManager {
         } else {
             print("Key generation failed.")
         }
+        return (privateKey, publicKey)
     }
     
     func printPublicKey(_ publicKey: SecKey) {
